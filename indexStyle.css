@@ -1,0 +1,129 @@
+body{
+  margin: 0;
+}
+body a{
+  text-decoration: none;
+}
+
+#backgroundVideo{
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+  position:absolute;
+}
+
+header{
+  position:relative;
+  padding-top:200px;
+}
+
+.GwagiCareer{
+  position:relative;
+  display:inline;
+  left:150px;
+}
+.Gwagi{
+  color:#b5121b;
+  display:inline;
+}
+
+.Career{
+  color:#003e7e;
+}
+
+header form{
+  position:relative;
+  display:inline;
+  left:330px;
+}
+
+.search{
+  width:600px;
+  height:50px;
+}
+
+.sns{
+  display: inline;
+  position: relative;
+  left:500px;
+  top:20px;
+}
+
+#seoultechIcon{
+  position: relative;
+  width:70px;
+  height:60px;
+}
+
+#linkareerIcon{
+  position: relative;
+  width:160px;
+  height:50px;
+}
+
+.navbar{
+  position: relative;
+  top:10px;
+  background-color: #003e75;
+  height:100px;
+  margin: 0 auto; /* container 영역을 브라우저에서 가운데 정렬하기 위해 auto설정 */
+  text-align: center; /* inline-block화 된 div들을 텍스트 마냥 center로 정렬*/
+}
+
+.navli_1{
+  font-size: 25px;
+  top:30px;
+  width:350px;
+  display:inline-block;
+  height:80px;
+  position:relative;
+  color:white;
+}
+
+.navli_2{
+  font-size: 25px;
+  top:30px;
+  width:350px;
+  display:inline-block;
+  height:80px;
+  position:relative;
+  color:white;
+}
+
+.navli_3{
+  font-size: 25px;
+  top:30px;
+  width:350px;
+  display:inline-block;
+  height:80px;
+  position:relative;
+  color:white;
+}
+
+.navli_4{
+  font-size: 25px;
+  top:30px;
+  width:350px;
+  display:inline-block;
+  height:80px;
+  position:relative;
+  color:white;
+}
+
+.navbar a{
+  color:inherit;
+}
+
+footer{
+  background-color: gray;
+  color:white;
+  text-align:left;
+  position:relative;
+  z-index:1;
+}
+
+.unlink-footer{
+  padding-left: 100px;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
