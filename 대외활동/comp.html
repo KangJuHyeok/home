@@ -7,7 +7,7 @@
     <link rel="stylesheet" type="text/css" href="../indexStyle.css">
     <link rel="stylesheet" type="text/css" href="./activities.css">
   </head>
-  <>
+  <body>
     <!--상단 로고들 및 검색창-->
     <header>
       <div class="GwagiCareer">
@@ -28,12 +28,52 @@
     
     <nav class="navbar">
       <div class="navli_1"><a href="../커뮤니티/community.html">커뮤니티</a></div>
-      <div class="navli_2"><a href="../대외활동/comp.html">공모전</a></div>
+      <div class="navli_2"><a href="../대외활동/comp.html" style="color: #b5121b;">공모전</a></div>
       <div class="navli_3"><a href="../대외활동/act.html">대외활동</a></div>
       <div class="navli_4"><a href="../일정/calendar.html">일정</a></div>
     </nav>
-    
-    <div>
+
+    <div id="slideShow">
+      <ul class="slides">
+        <li><img src="image/flower.jpg" alt=""></li>
+        <li><img src="image/fox.jpg" alt=""></li>
+        <li><img src="image/lightning.jpg" alt=""></li>
+        <li><img src="image/moon.jpg" alt=""></li>
+      </ul>  
+      <p class="controller">
+        <!-- &lang: 왼쪽 방향 화살표
+        &rang: 오른쪽 방향 화살표 -->
+        <span class="prev">&lang;</span>  
+        <span class="next">&rang;</span>
+      </p>
+    </div>
+    <script src="JS/slideShow.js"></script>
+
+    <br><br>
+    <hr>
+
+    <div class="button_group">
+      <div class="button_parent">
+        <button id="who" class="btnFloat btnRed">응모대상</button>
+        <button id="comp_field" class="btnFloat btnBlue">공모분야</button>
+      </div>
+      <div class="who_child">
+        <button id="seoul" class="btnFloat btnRed">청소년</button>
+        <button id="Metropolitan" class="btnFloat btnRed">대학생</button>
+        <button id="Gangwon" class="btnFloat btnRed">직장인/일반인</button>
+        <button id="Chungcheong" class="btnFloat btnRed">제한없음</button>
+      </div>
+      <div class="comp_field_child">
+        <button id="seoul" class="btnFloat btnBlue">기획/아이디어</button>
+        <button id="Metropolitan" class="btnFloat btnBlue">학술</button>
+        <button id="Gangwon" class="btnFloat btnBlue">창업</button>
+        <button id="Chungcheong" class="btnFloat btnBlue">과학/공학</button>
+        <button id="Jeolla" class="btnFloat btnBlue">예체능/패션</button>
+        <button id="Gyeongsang" class="btnFloat btnBlue">문학/사니리오</button>
+      </div>
+    </div>
+
+    <div class="section_main">
       <div class="poster">
         <div class="comp_1">
           <a href="#">
