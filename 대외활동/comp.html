@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<!--main page-->
 <html>
   <head>
     <meta charset="utf-8">
     <title>공모전</title>
     <link rel="stylesheet" type="text/css" href="../indexStyle.css">
     <link rel="stylesheet" type="text/css" href="./activities.css">
+    <script type="text/javascript" src="../slide.js"></script>
   </head>
   <body>
     <!--상단 로고들 및 검색창-->
@@ -33,95 +33,145 @@
       <div class="navli_4"><a href="../일정/calendar.html">일정</a></div>
     </nav>
 
-    <div id="slideShow">
-      <ul class="slides">
-        <li><img src="image/flower.jpg" alt=""></li>
-        <li><img src="image/fox.jpg" alt=""></li>
-        <li><img src="image/lightning.jpg" alt=""></li>
-        <li><img src="image/moon.jpg" alt=""></li>
-      </ul>  
-      <p class="controller">
-        <!-- &lang: 왼쪽 방향 화살표
-        &rang: 오른쪽 방향 화살표 -->
-        <span class="prev">&lang;</span>  
-        <span class="next">&rang;</span>
-      </p>
+    <div class="kind_wrap">
+      <div class="kind_slider">
+        <ul class="slider">
+            <li><a href="https://www.kbiz.or.kr/ko/event/event/view.do?seq=3904&mnSeq=212"><img src="../img/slide_1.png" alt=""></a></li>
+            <li><a href="https://www.childfund.or.kr/camp/cpView20000594_main.do"><img src="../img/slide_2.png" alt=""></a></li>
+            <li><a href="https://store.meritzfire.com/health-and-cancer.do#!/"><img src="../img/slide_3.png" alt=""></a></li>
+            <li><a href="https://doctorlean.co.kr/goods/view?no=124&src=text&kw=000091&gad=1&gclid=EAIaIQobChMIkaaCwqXbgAMVmKGWCh3Dfw76EAAYASAAEgJe-_D_BwE"><img src="../img/slide_4.png" alt=""></a></li>
+        </ul>
+      </div>
+      <div class="arrow">
+          <a href="" class="prev">&lt;</a>
+          <a href="" class="next">&gt;</a>
+      </div>
     </div>
-    <script src="JS/slideShow.js"></script>
 
-    <br><br>
-    <hr>
+    <div class="side_bar">
+      <h3>이번 주 인기글</h3><hr>
+      <a href="community_post_free_3.html">1. 여태까지 시간을 너무 낭비해왔다..</a><br>
+      <a href="community_post_free_5.html">2. 곧 개강인데 어쩌지..</a><br>
+      <a href="community_post_free_6.html">3. 인사 직무 물어볼게ㅠ</a><br>
+      <a href="community_post_free_2.html">4. 같이 개발 공부할 사람?</a><br>
+      <a href="community_post_free_4.html">5. 고딩때 공모전</a><br>
+    </div>
 
     <div class="button_group">
       <div class="button_parent">
         <button id="who" class="btnFloat btnRed">응모대상</button>
         <button id="comp_field" class="btnFloat btnBlue">공모분야</button>
       </div>
-      <div class="who_child">
-        <button id="seoul" class="btnFloat btnRed">청소년</button>
-        <button id="Metropolitan" class="btnFloat btnRed">대학생</button>
-        <button id="Gangwon" class="btnFloat btnRed">직장인/일반인</button>
-        <button id="Chungcheong" class="btnFloat btnRed">제한없음</button>
+      <div id="who_child">
+        <button id="teenager" class="btnFloat btnRed">청소년</button>
+        <button id="college" class="btnFloat btnRed">대학생</button>
+        <button id="office" class="btnFloat btnRed">직장인/일반인</button>
+        <button id="anyone" class="btnFloat btnRed">제한없음</button>
       </div>
-      <div class="comp_field_child">
-        <button id="seoul" class="btnFloat btnBlue">기획/아이디어</button>
-        <button id="Metropolitan" class="btnFloat btnBlue">학술</button>
-        <button id="Gangwon" class="btnFloat btnBlue">창업</button>
-        <button id="Chungcheong" class="btnFloat btnBlue">과학/공학</button>
-        <button id="Jeolla" class="btnFloat btnBlue">예체능/패션</button>
-        <button id="Gyeongsang" class="btnFloat btnBlue">문학/사니리오</button>
+      <div id="comp_field_child">
+        <button id="idea" class="btnFloat btnBlue">기획/아이디어</button>
+        <button id="academic" class="btnFloat btnBlue">학술</button>
+        <button id="founded" class="btnFloat btnBlue">창업</button>
+        <button id="science" class="btnFloat btnBlue">과학/공학</button>
+        <button id="art" class="btnFloat btnBlue">예체능/패션</button>
+        <button id="literature" class="btnFloat btnBlue">문학/시나리오</button>
       </div>
     </div>
 
+    <div style="margin-left: 200px;">
+      <h1 class="classification">모든 포스터</h1>
+    </div>
+    
     <div class="section_main">
       <div class="poster">
-        <div class="comp_1">
-          <a href="#">
+        <div data-who='teenager,college' data-field="idea">
+          <a href="./comp_detail_1.html">
             <img src="./img/comp_img_1.png" alt="">
-            <div style="width: 225px; height: 50px;">임시4</div>
+            <div>2023 제 1회 환경 아이디어 대회<br>-서울시립강북청소년센터-</div>
           </a>
         </div>
 
-        <div class="comp_2">
-          <a href="#">
+        <div data-who='teenager,college,office,anyone' data-field="idea">
+          <a href="./comp_detail_2.html">
             <img src="./img/comp_img_2.png" alt="">
-            <div style="width: 225px; height: 50px;">임시4</div>
+            <div>2023 우리가 바라는 안전한 학교 공모전<br>-교육부-</div>
           </a>
         </div>
 
-        <div class="comp_3">
-          <a href="#">
+        <div data-who='teenager' data-field="academic">
+          <a href="./comp_detail_3.html">
             <img src="./img/comp_img_3.png" alt="">
-            <div style="width: 225px; height: 50px;">임시4</div>
+            <div>제10회 청소년 문화유산 연구 및 보전활동 발표대회 -문화유산국민식탁-</div>
           </a>
         </div>
 
-        <div class="comp_4">
-          <a href="#">
+        <div data-who='college,office' data-field="academic">
+          <a href="./comp_detail_4.html">
             <img src="./img/comp_img_4.png" alt="">
-            <div style="width: 225px; height: 50px;">임시4</div>
+            <div>2023 기술금융연구 논문 모집<br>-기술보증기금-</div>
           </a>
         </div>
 
-        <div class="comp_5">
-          <a href="#">
+        <div data-who='college,office' data-field="founded">
+          <a href="./comp_detail_5.html">
             <img src="./img/comp_img_5.png" alt="">
-            <div style="width: 225px; height: 50px;">임시5</div>
+            <div>스포츠산업 창업 아이디어 공모전<br>-㈜윕스-</div>
           </a>
         </div>
 
-        <div class="comp_6">
-          <a href="#">
+        <div data-who='teenager' data-field="founded">
+          <a href="./comp_detail_6.html">
             <img src="./img/comp_img_6.png" alt="">
-            <div style="width: 225px; height: 50px;"></div>
+            <div>제2회 장한상수상자 창업성공스토리 감상문 공모전 완도군 -장보고글로벌재단-</div>
           </a>
         </div>
-        <div class="comp_7"><a href="#"><img src="./img/comp_img_7.png" alt=""></a></div>
-        <div class="comp_8"><a href="#"><img src="./img/comp_img_8.png" alt=""></a></div>
-        <div class="comp_9"><a href="#"><img src="./img/comp_img_9.png" alt=""></a></div>
+
+        <div data-who='college,office' data-field="science">
+          <a href="./comp_detail_7.html">
+            <img src="./img/comp_img_7.png" alt="">
+            <div>생성 AI 원데이톤 : 게임 세계관 만들기 " AI 니가 다해유" -주식회사 모두의연구소-</div>
+          </a>
+        </div>
+
+        <div data-who='college,office' data-field="science">
+          <a href="./comp_detail_8.html">
+            <img src="./img/comp_img_8.png" alt="">
+            <div>2023 XR디바이스콘텐츠 메이커톤&아이디어톤  -과학기술정보통신부-</div>
+          </a>
+        </div>
+
+        <div data-who='teenager,college,office,anyone' data-field="art">
+          <a href="./comp_detail_9.html">
+            <img src="./img/comp_img_9.png" alt="">
+            <div>노브레인 리믹스 콘테스트 - 넌 내게 반했어, 소주한잔 -써밋플레이-</div>
+          </a>
+        </div>
+
+        <div data-who='teenager' data-field="art">
+          <a href="./comp_detail_10.html">
+            <img src="./img/comp_img_10.png" alt="">
+            <div>2023년 전국청소년댄스퍼포먼스대회<br>-정왕청소년문화의집-</div>
+          </a>
+        </div>
+
+        <div data-who='teenager,college,office,anyone' data-field="literature">
+          <a href="./comp_detail_11.html">
+            <img src="./img/comp_img_11.png" alt="">
+            <div>2023 예술세계 신인상 공모<br>-한국예술문화단체총연합회-</div>
+          </a>
+        </div>
+
+        <div data-who='teenager,college,office,anyone' data-field="literature">
+          <a href="./comp_detail_12.html">
+            <img src="./img/comp_img_12.png" alt="">
+            <div>시편 150 프로젝트<br>-복음의전함-</div>
+          </a>
+        </div>
         <div class="clearfix"></div>
       </div>
     </div>
+
+    <script type="text/javascript" src="./button.js"></script>
 
     <footer>
       <div class="unlink-footer">

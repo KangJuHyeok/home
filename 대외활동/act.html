@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<!--main page-->
 <html>
   <head>
     <meta charset="utf-8">
     <title>대외활동</title>
     <link rel="stylesheet" type="text/css" href="../indexStyle.css">
+    <link rel="stylesheet" type="text/css" href="./activities.css">
+    <script type="text/javascript" src="../slide.js"></script>
   </head>
   <body>
     <!--상단 로고들 및 검색창-->
@@ -28,47 +29,146 @@
     <nav class="navbar">
       <div class="navli_1"><a href="../커뮤니티/community.html">커뮤니티</a></div>
       <div class="navli_2"><a href="../대외활동/comp.html">공모전</a></div>
-      <div class="navli_3"><a href="../대외활동/act.html">대외활동</a></div>
+      <div class="navli_3"><a href="../대외활동/act.html" style="color: #b5121b;">대외활동</a></div>
       <div class="navli_4"><a href="../일정/calendar.html">일정</a></div>
     </nav>
 
-    <br><br>
-    <hr>
+    <div class="kind_wrap">
+      <div class="kind_slider">
+        <ul class="slider">
+            <li><a href="https://www.kbiz.or.kr/ko/event/event/view.do?seq=3904&mnSeq=212"><img src="../img/slide_1.png" alt=""></a></li>
+            <li><a href="https://www.childfund.or.kr/camp/cpView20000594_main.do"><img src="../img/slide_2.png" alt=""></a></li>
+            <li><a href="https://store.meritzfire.com/health-and-cancer.do#!/"><img src="../img/slide_3.png" alt=""></a></li>
+            <li><a href="https://doctorlean.co.kr/goods/view?no=124&src=text&kw=000091&gad=1&gclid=EAIaIQobChMIkaaCwqXbgAMVmKGWCh3Dfw76EAAYASAAEgJe-_D_BwE"><img src="../img/slide_4.png" alt=""></a></li>
+        </ul>
+      </div>
+      <div class="arrow">
+          <a href="" class="prev">&lt;</a>
+          <a href="" class="next">&gt;</a>
+      </div>
+    </div>
+
+    <div class="side_bar">
+      <h3>이번 주 인기글</h3><hr>
+      <a href="community_post_free_3.html">1. 여태까지 시간을 너무 낭비해왔다..</a><br>
+      <a href="community_post_free_5.html">2. 곧 개강인데 어쩌지..</a><br>
+      <a href="community_post_free_6.html">3. 인사 직무 물어볼게ㅠ</a><br>
+      <a href="community_post_free_2.html">4. 같이 개발 공부할 사람?</a><br>
+      <a href="community_post_free_4.html">5. 고딩때 공모전</a><br>
+    </div>
 
     <div class="button_group">
       <div class="button_parent">
-        <button id="region" class="btnFloat btnBlueGreen">응모대상</button>
-        <button id="field">활동분야</button>
+        <button id="region" class="btnFloat btnRed">모임지역</button>
+        <button id="field" class="btnFloat btnBlue">활동분야</button>
       </div>
-      <div class="region_child">
-        <button id="seoul">서울</button>
-        <button id="Metropolitan">서울 외 수도권</button>
-        <button id="Gangwon">강원도</button>
-        <button id="Chungcheong">충청도</button>
-        <button id="Jeolla">전라도</button>
-        <button id="Gyeongsang">경상도</button>
+      <div id="region_child">
+        <button id="Seoul" class="btnFloat btnRed">서울</button>
+        <button id="Metropolitan" class="btnFloat btnRed">서울 외 수도권</button>
+        <button id="Gangwon" class="btnFloat btnRed">강원도</button>
+        <button id="Chungcheong" class="btnFloat btnRed">충청도</button>
+        <button id="Jeolla" class="btnFloat btnRed">전라도</button>
+        <button id="Gyeongsang" class="btnFloat btnRed">경상도</button>
+        <button id="Overseas" class="btnFloat btnRed">해외</button>
       </div>
-      <div class="field_child">
-        <button id="seoul">서울</button>
-        <button id="Metropolitan">서울 외 수도권</button>
-        <button id="Gangwon">강원도</button>
-        <button id="Chungcheong">충청도</button>
-        <button id="Jeolla">전라도</button>
-        <button id="Gyeongsang">경상도</button>
+      <div id="field_child">
+        <button id="supporters" class="btnFloat btnBlue">서포터즈</button>
+        <button id="volunteer_overseas" class="btnFloat btnBlue">봉사단(해외)</button>
+        <button id="volunteer" class="btnFloat btnBlue">봉사단(국내)</button>
+        <button id="reporters" class="btnFloat btnBlue">기자단</button>
+        <button id="lecture" class="btnFloat btnBlue">강연</button>
+        <button id="mentoring" class="btnFloat btnBlue">멘토링</button>
       </div>
     </div>
 
-    <div class="poster">
-      <div class="act_1"><a href="#"><img src="./img/act_img_1.png" alt="1"></a></div>
-      <div class="act_2"><a href="#"><img src="./img/act_img_2.png" alt="2"></a></div>
-      <div class="act_3"><a href="#"><img src="./img/act_img_3.png" alt="3"></a></div>
-      <div class="act_4"><a href="#"><img src="./img/act_img_4.png" alt="4"></a></div>
-      <div class="act_5"><a href="#"><img src="./img/act_img_5.png" alt="5"></a></div>
-      <div class="act_6"><a href="#"><img src="./img/act_img_6.png" alt="6"></a></div>
-      <div class="act_7"><a href="#"><img src="./img/act_img_7.png" alt="7"></a></div>
-      <div class="act_8"><a href="#"><img src="./img/act_img_8.png" alt="8"></a></div>
-      <div class="act_9"><a href="#"><img src="./img/act_img_9.png" alt="9"></a></div>
+    <div style="margin-left: 200px;">
+      <h1 class="classification">모든 포스터</h1>
     </div>
+
+    <div class="section_main">
+      <div class="poster">
+        <div data-region='Seoul' data-field="supporters">
+          <a href="./act_detail_1.html">
+            <img src="./img/act_img_1.png" alt="">
+            <div>대외활동도 B2B영업으로! 실무경험 A to Z까지! -한국대학생인재협회-</div>
+          </a>
+        </div>
+
+        <div data-region='Seoul,Metropolitan,Gangwon,Chungcheong,Jeolla,Gyeongsang,Overseas' data-field="supporters">
+          <a href="./act_detail_2.html">
+            <img src="./img/act_img_2.png" alt="">
+            <div>2023 어시스트카드 대학생 서포터즈 모집<br>-어시스트카드-</div>
+          </a>
+        </div>
+
+        <div data-region='Overseas' data-field="volunteer_overseas">
+          <a href="./act_detail_3.html">
+            <img src="./img/act_img_3.png" alt="">
+            <div>2024년도 1차 ADRF 네팔 해외봉사단 봉사단원 모집 -ADRF-</div>
+          </a>
+        </div>
+
+        <div data-region='Overseas' data-field="volunteer_overseas">
+          <a href="./act_detail_4.html">
+            <img src="./img/act_img_4.png" alt="">
+            <div>2023년 해외 국립공원 Summer-Camp 참가자 모집 -문화체험본부-</div>
+          </a>
+        </div>
+
+        <div data-region='Chungcheong' data-field="volunteer">
+          <a href="./act_detail_5.html">
+            <img src="./img/act_img_5.png" alt="">
+            <div>청주시청소년수련관 X 청주공예비엔날레 자원봉사자 모집 -청주시청소년수련관-</div>
+          </a>
+        </div>
+
+        <div data-region='Metropolitan' data-field="volunteer">
+          <a href="./act_detail_6.html">
+            <img src="./img/act_img_6.png" alt="">
+            <div>사회공헌활동 기부은행 돌봄 봉사자 모집 -시흥시사회복지협의회-</div>
+          </a>
+        </div>
+        <div data-region='Metropolitan' data-field="reporters">
+          <a href="./act_detail_7.html">
+            <img src="./img/act_img_7.png" alt="">
+            <div>수원특례시 자치분권 청년기획단 모집<br>-수원특례시 자치분권과-</div>
+          </a>
+        </div>
+        <div data-region='Seoul' data-field="reporters">
+          <a href="./act_detail_8.html">
+            <img src="./img/act_img_8.png" alt="">
+            <div>지속가능바람 기자단 34기 모집<br>-지속가능협동조합 바람-</div>
+          </a>
+        </div>
+        <div data-region='Gyeongsang' data-field="lecture">
+          <a href="./act_detail_9.html">
+            <img src="./img/act_img_9.png" alt="">
+            <div>경북 관광인재 육성 아카데미 IN 안동<br>-주식회사 에스앤엘기획-</div>
+          </a>
+        </div>
+        <div data-region='Jeolla' data-field="lecture">
+          <a href="./act_detail_10.html">
+            <img src="./img/act_img_10.png" alt="">
+            <div>제5회 국제항로표지포럼 참석자 모집<br>소프트하우스코리아</div>
+          </a>
+        </div>
+        <div data-region='Chungcheong' data-field="mentoring">
+          <a href="./act_detail_11.html">
+            <img src="./img/act_img_11.png" alt="">
+            <div>ICT 이노베이션스퀘어 인공지능·블록체인 교육생 모집 -한국표준협회-</div>
+          </a>
+        </div>
+        <div data-region='Seoul,Metropolitan,Gangwon,Chungcheong,Jeolla,Gyeongsang,Overseas' data-field="mentoring">
+          <a href="./act_detail_12.html">
+            <img src="./img/act_img_12.png" alt="">
+            <div>데이터분석&엔지니어취업캠프(Python) 8월 수강생모집 -멀티캠퍼스-</div>
+          </a>
+        </div>
+        <div class="clearfix"></div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="./button_act.js"></script>
 
     <footer>
       <div class="unlink-footer">
