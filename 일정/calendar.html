@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<!--main page-->
 <html>
   <head>
     <meta charset="utf-8">
     <title>일정</title>
     <link rel="stylesheet" type="text/css" href="../indexStyle.css">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script type="text/javascript" src="../slide.js"></script>
   </head>
   <body>
     <!--상단 로고들 및 검색창-->
@@ -29,12 +30,138 @@
       <div class="navli_1"><a href="../커뮤니티/community.html">커뮤니티</a></div>
       <div class="navli_2"><a href="../대외활동/comp.html">공모전</a></div>
       <div class="navli_3"><a href="../대외활동/act.html">대외활동</a></div>
-      <div class="navli_4"><a href="../일정/calendar.html">일정</a></div>
+      <div class="navli_4"><a href="../일정/calendar.html" style="color: #b5121b;">일정</a></div>
     </nav>
     
-    <pre>
-      달력 추가예정
-    </pre>
+    <div class="kind_wrap">
+      <div class="kind_slider">
+        <ul class="slider">
+            <li><a href="https://www.kbiz.or.kr/ko/event/event/view.do?seq=3904&mnSeq=212"><img src="../img/slide_1.png" alt=""></a></li>
+            <li><a href="https://www.childfund.or.kr/camp/cpView20000594_main.do"><img src="../img/slide_2.png" alt=""></a></li>
+            <li><a href="https://store.meritzfire.com/health-and-cancer.do#!/"><img src="../img/slide_3.png" alt=""></a></li>
+            <li><a href="https://doctorlean.co.kr/goods/view?no=124&src=text&kw=000091&gad=1&gclid=EAIaIQobChMIkaaCwqXbgAMVmKGWCh3Dfw76EAAYASAAEgJe-_D_BwE"><img src="../img/slide_4.png" alt=""></a></li>
+        </ul>
+      </div>
+      <div class="arrow">
+          <a href="" class="prev">&lt;</a>
+          <a href="" class="next">&gt;</a>
+      </div>
+    </div>
+
+    <div class="side_bar">
+      <h3>이번 주 인기글</h3><hr>
+      <a href="community_post_free_3.html">1. 여태까지 시간을 너무 낭비해왔다..</a><br>
+      <a href="community_post_free_5.html">2. 곧 개강인데 어쩌지..</a><br>
+      <a href="community_post_free_6.html">3. 인사 직무 물어볼게ㅠ</a><br>
+      <a href="community_post_free_2.html">4. 같이 개발 공부할 사람?</a><br>
+      <a href="community_post_free_4.html">5. 고딩때 공모전</a><br>
+    </div>
+
+    <div id="calendar_wrap">
+	<table id="calendar">
+	  <caption>
+	    <span class="year"></span>년 
+	    <span class="month"></span>월 
+	  </caption>
+	  <tr>
+	    <th>일</th><th>월</th><th>화</th><th>수</th>
+	    <th>목</th><th>금</th><th>토</th>
+	  </tr>
+	  <tr>
+	    <td>&nbsp;</td><td>&nbsp;</td>
+	    <td>&nbsp;</td><td>&nbsp;</td>
+	    <td>&nbsp;</td><td>&nbsp;</td>
+	    <td>&nbsp;</td>
+	  </tr>
+	  <tr>
+	    <td>&nbsp;</td>
+	    <td>&nbsp;</td>
+	    <td>&nbsp;</td>
+	    <td>&nbsp;</td>
+	    <td>&nbsp;</td>
+	    <td>&nbsp;</td>
+	    <td>&nbsp;</td>
+	  </tr>
+	  <tr>
+	    <td>&nbsp;</td>
+	    <td>&nbsp;</td>
+	    <td>&nbsp;</td>
+	    <td>&nbsp;</td>
+	    <td>&nbsp;</td>
+	    <td>&nbsp;</td>
+	    <td>&nbsp;</td>
+	  </tr>
+	  <tr>
+	    <td>&nbsp;</td>
+	    <td>&nbsp;</td>
+	    <td>&nbsp;</td>
+	    <td>&nbsp;</td>
+	    <td>&nbsp;</td>
+	    <td>&nbsp;</td>
+	    <td>&nbsp;</td>
+	  </tr>
+	  <tr>
+	    <td>&nbsp;</td>
+	    <td>&nbsp;</td>
+	    <td>&nbsp;</td>
+	    <td>&nbsp;</td>
+	    <td>&nbsp;</td>
+	    <td>&nbsp;</td>
+	    <td>&nbsp;</td>
+	  </tr>
+	  <tr>
+	    <td>&nbsp;</td>
+	    <td>&nbsp;</td>
+	    <td>&nbsp;</td>
+	    <td>&nbsp;</td>
+	    <td>&nbsp;</td>
+	    <td>&nbsp;</td>
+	    <td>&nbsp;</td>
+	  </tr>
+	</table>
+
+	<a href="#" id="prev">이전 달</a>
+	<a href="#" id="next">다음 달</a>
+</div> 
+
+<div id="pop_info" class="pop_wrap" style="display: none;">
+	<div class="pop_inner">
+		<h1>1</h1>
+		<h3 style="color: #b5121b;">공모전</h3>
+		<ul class="comp">
+			<li><a href="../대외활동/comp_detail_1.html">2023 제 1회 환경 아이디어 대회</a></li>
+			<li><a href="../대외활동/comp_detail_2.html">2023 우리가 바라는 안전한 학교 공모전(~9.19)</a></li>
+			<li><a href="../대외활동/comp_detail_3.html">제10회 청소년 문화유산 연구 및 보전활동 발표대회</a></li>
+			<li><a href="../대외활동/comp_detail_4.html">2023 기술금융연구 논문 모집</a></li>
+			<li><a href="../대외활동/comp_detail_5.html">[2023 SPORTS-UP CHALLENGE] 스포츠산업 창업 아이디어</a></li>
+			<li><a href="../대외활동/comp_detail_6.html">제2회 장한상수상자 창업성공스토리 감상문 공모전</a></li>
+			<li><a href="../대외활동/comp_detail_7.html">생성 AI 원데이톤 : 게임 세계관 만들기 " AI 니가 다해유"</a></li>
+			<li><a href="../대외활동/comp_detail_8.html">2023 XR디바이스콘텐츠 메이커톤&아이디어톤</a></li>
+			<li><a href="../대외활동/comp_detail_9.html">노브레인 리믹스 콘테스트 - 넌 내게 반했어, 소주한잔</a></li>
+			<li><a href="../대외활동/comp_detail_10.html">2023년 전국청소년댄스퍼포먼스대회</a></li>
+			<li><a href="../대외활동/comp_detail_11.html">2023 예술세계 신인상 공모</a></li>
+			<li><a href="../대외활동/comp_detail_12.html">시편 150 프로젝트</a></li>
+		</ul>
+		<h3 style="color:#003e7e;">대외활동</h3>
+		<ul class="act">
+			<li><a href="../대외활동/act_detail_1.html">[기업이 원하는 영업은 B2B] 대외활동도 B2B영업으로! 실무경험 A to Z까지!</a></li>
+			<li><a href="../대외활동/act_detail_2.html">2023 어시스트카드 대학생 서포터즈 모집 (~08/27)</a></li>
+			<li><a href="../대외활동/act_detail_3.html">2024년도 1차 ADRF 네팔 해외봉사단 봉사단원 모집</a></li>
+			<li><a href="../대외활동/act_detail_4.html">2023년 해외 국립공원 Summer-Camp 참가자 모집</a></li>
+			<li><a href="../대외활동/act_detail_5.html">청주시청소년수련관 X 청주공예비엔날레 자원봉사자 모집</a></li>
+			<li><a href="../대외활동/act_detail_6.html">시흥시사회복지협의회 사회공헌활동 기부은행 돌봄 봉사자 모집</a></li>
+			<li><a href="../대외활동/act_detail_7.html">[수원특례시/자치분권과] 2023년 수원특례시 자치분권 청년기획단 모집(~08.25.)</a></li>
+			<li><a href="../대외활동/act_detail_8.html">[대학생 기자단] 지속가능바람 기자단 34기 모집</a></li>
+			<li><a href="../대외활동/act_detail_9.html">2023 경북 관광인재 육성 아카데미 - 찾아가는 아카데미 IN 안동</a></li>
+			<li><a href="../대외활동/act_detail_10.html">[한국항로표지기술원] 제5회 국제항로표지포럼 참석자 모집</a></li>
+			<li><a href="../대외활동/act_detail_11.html">ICT 이노베이션스퀘어 인공지능·블록체인 교육생 모집</a></li>
+			<li><a href="../대외활동/act_detail_12.html">[멀티캠퍼스] 데이터분석&엔지니어취업캠프(Python) 8월 수강생모집</a></li>
+		</ul>
+		<button type="button" class="btn_close">닫기</button>
+	</div>
+</div>
+
+<script src="app.js"></script>
 
     <footer>
       <div class="unlink-footer">

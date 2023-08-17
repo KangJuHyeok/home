@@ -3,6 +3,7 @@ body{
 }
 body a{
   text-decoration: none;
+  color: inherit; 
 }
 
 #backgroundVideo{
@@ -20,7 +21,7 @@ header{
 .GwagiCareer{
   position:relative;
   display:inline;
-  left:150px;
+  left:190px;
 }
 .Gwagi{
   color:#b5121b;
@@ -34,7 +35,7 @@ header{
 header form{
   position:relative;
   display:inline;
-  left:330px;
+  left:355px;
 }
 
 .search{
@@ -45,7 +46,7 @@ header form{
 .sns{
   display: inline;
   position: relative;
-  left:500px;
+  left:520px;
   top:20px;
 }
 
@@ -66,8 +67,9 @@ header form{
   top:10px;
   background-color: #003e75;
   height:100px;
-  margin: 0 auto; /* container 영역을 브라우저에서 가운데 정렬하기 위해 auto설정 */
-  text-align: center; /* inline-block화 된 div들을 텍스트 마냥 center로 정렬*/
+  margin: 0 auto; 
+  margin-top: 25px;
+  text-align: center;
 }
 
 .navli_1{
@@ -114,7 +116,12 @@ header form{
   color:inherit;
 }
 
+.navbar a:hover{
+  font-size: 1.2em;
+}
+
 footer{
+  margin-top: 100px;
   background-color: gray;
   color:white;
   text-align:left;
@@ -128,78 +135,88 @@ footer{
   padding-bottom: 50px;
 }
 
-/* 보여줄 구간의 높이와 넓이 설정 */
-#slideShow{
-  width: 500px;
-  height: 300px;
+.kind_wrap *{
+  margin: 0;
+  padding: 0;
+}
+
+.kind_wrap li {
+  list-style: none;
+}
+.kind_wrap img{
+  width: 800px;
+  height: 130px;
+}
+.kind_wrap {
+  border:2px solid black; 
+  left: 430px; 
+  max-width:800px;
+  margin:0 auto; 
+  margin-top: 100px; 
   position: relative;
-  margin: 50px auto;
-  overflow: hidden;   
-  /*리스트 형식으로 이미지를 일렬로 
-  정렬할 것이기 때문에, 500px 밖으로 튀어 나간 이미지들은
-  hidden으로 숨겨줘야됨*/
+  display: inline-block;
+}
+.kind_wrap > .kind_slider {
+  overflow: hidden;
+}
+.kind_wrap > .kind_slider .slider { 
+  position: relative; 
+  transition: 0.5s;
+}
+.kind_wrap > .kind_slider .slider li {
+  float:left;
+}
+.kind_wrap > .kind_slider img {
+  vertical-align: top;
+}
+.kind_wrap .arrow > a.prev {
+  position: absolute; 
+  left:-50px; 
+  bottom:50px;
+  font-size: 2em;
+}
+.kind_wrap .arrow > a.next {
+  position: absolute; 
+  right:-50px; 
+  bottom:50px;
+  font-size: 2em;
 }
 
-
-.slides{
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 2500px; /* 슬라이드할 사진과 마진 총 넓이 */
-  transition: left 0.5s ease-out; 
-  /*ease-out: 처음에는 느렸다가 점점 빨라짐*/
-}
-
-/* 첫 번째 슬라이드 가운데에 정렬하기위해
-첫번째 슬라이드만 margin-left조정 */
-.slides li:first-child{
-  margin-left: 100px;
-}
-
-/* 슬라이드들 옆으로 정렬 */
-.slides li:not(:last-child){
-  float: left;
-  margin-right: 100px;
-}
-
-.slides li{
-  float: left;
-  list-style-type: none;
-}
-
-.controller span{
-  position:absolute;
-  background-color: transparent;
-  color: black;
-  text-align: center;
-  border-radius: 50%;
-  padding: 10px 20px;
-  
-  font-size: 1.3em;
-  cursor: pointer;
-}
-
-/* 이전, 다음 화살표에 마우스 커서가 올라가 있을때 */
-.controller span:hover{
-  background-color: rgba(128, 128, 128, 0.11);
-}
-
-.prev{
-  left: 10px;
-}
-
-/* 이전 화살표에 마우스 커서가 올라가 있을때 
-이전 화살표가 살짝 왼쪽으로 이동하는 효과*/
 .prev:hover{
-  transform: translateX(-10px);
+  transform: translateX(-5px);
+  background-color: rgba(128, 128, 128, 0.11);
+  border-radius: 50%;
+  font-size: 3em;
 }
 
-.next{
-  right: 10px;
-}
-
-/* 다음 화살표에 마우스 커서가 올라가 있을때 
-이전 화살표가 살짝 오른쪽으로 이동하는 효과*/
 .next:hover{
-  transform: translateX(10px);
+  transform: translateX(5px);
+  background-color: rgba(128, 128, 128, 0.11);
+  border-radius: 50%;
+  font-size: 1.3em;
+}
+
+.side_bar{
+  position: sticky;
+  top: 50px;
+  left: 1350px;
+  width:300px;
+  height: 200px;
+  border: solid;
+  display: inline-block;
+  background-color: #ABBED2; color: white;
+  border: 3px solid #DDDDDD;
+}
+.side_bar h3{
+  font-weight: bold;
+}
+
+.side_bar a:hover{
+  font-size: 1.1em;
+  color: #003e75;
+}
+
+.side_bar hr{
+  border: dashed;
+  color: #003e75;
 }

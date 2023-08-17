@@ -1,0 +1,30 @@
+.writing{
+  margin-left: 200px;
+  margin-right: 350px;
+  text-align: left;
+  border: solid;
+}
+
+.blank_table{
+  padding-left: 490px;
+  padding-right: 490px;
+}
+
+#txt{
+  resize:none;
+  width: 90%;
+}
+
+.font_child:hover{
+  background-color: gray;
+}
+
+.bold{
+  font-weight: bold;
+}
+.oblique{
+  font-style: oblique;
+}
+.underline{
+  text-decoration: underline;
+}

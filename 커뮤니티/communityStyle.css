@@ -1,0 +1,38 @@
+.community_list{
+  margin-top: 30px;
+  margin-left:350px;
+  margin-right: 350px;
+  border: solid;
+}
+.contents{
+  margin: auto;
+  text-align: center;
+}
+
+.contents td{
+  padding:20px;
+}
+
+tbody tr:hover{
+  color:#b5121b;
+}
+
+.inactive{
+  display: none;
+}
+
+#write:hover{
+  color:#003e7e;
+  font-size: 1.1em;
+}
+
+.writed{
+  margin-left: 400px;
+  margin-right: 400px;
+  text-align: left;
+  border: solid;
+}
+.writed hr{
+  border-width: 1px;
+  border-color: black;
+}
